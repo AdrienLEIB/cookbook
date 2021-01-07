@@ -1,0 +1,6 @@
+<h1><%= @theme.name.capitalize %></h1>
+
+<h2>Les figurines associées :</h2>
+<% @figurines.each do |figurine| %>
+  <p><%= figurine[:title] %></p> <br>
+<% end %>

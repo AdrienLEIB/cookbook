@@ -1,0 +1,8 @@
+<h1>All Themes</h1>
+<ul>
+  <% @themes.each do |theme| %>
+    <li><%= link_to theme.name, theme_path(theme) %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Ajouter un Theme", new_theme_path %>
